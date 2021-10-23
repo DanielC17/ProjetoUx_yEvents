@@ -1,4 +1,7 @@
 
+@media screen and (max-width:361px) {
+    
+
 
 body{
     background-color: rgb(32, 22, 57);
@@ -15,14 +18,14 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 55px;
-}
+    }
 
 #img_logo{
 
     height: 180px;
     width: 170px;
     margin-top: 10px;
-}
+    }
 
 .butons_left{
     display: flex;
@@ -30,7 +33,7 @@ body{
     justify-content: space-around;
     width: 20vh;
     margin-top: 10px;
-}
+    }
 
 .local{
     background-color: #FFE047;
@@ -38,20 +41,130 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 25px;
+    height: 10vh;
     margin-top: 20px;
     border-radius: 10px;
-}
+    
+    }
 
 .cep{
     display: flex;
     align-items: center;
-}
+    }
 
 .editar{
     display: flex;
     flex-direction: row;
     margin-right: 10px;
-  
+    }
+.list_events{
+    height: 70vh;
+}
+.eventos{
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #B608BF;
+    }
+
+footer{
+    background-color: #FFE047;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-top: 28px;
+    border-radius: 10px;
+    }
 }
 
+
+@media screen and (max-width:376px) {
+    
+
+
+    body{
+        background-color: rgb(32, 22, 57);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0%;
+    }
+    
+    .cabecalho{
+        background-color: #FFE047;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        }
+    
+    #img_logo{
+    
+        height: 180px;
+        width: 170px;
+        margin-top: 10px;
+        }
+    
+    .butons_left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 20vh;
+        margin-top: 10px;
+        }
+    
+    .local{
+        background-color: #FFE047;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 25px;
+        margin-top: 20px;
+        border-radius: 10px;
+        }
+    
+    .cep{
+        display: flex;
+        align-items: center;
+        }
+    
+    .editar{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        }
+    
+    .eventos{
+        background-color: #C4C4C4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #B608BF;
+        }
+    
+    .footer{
+        background-color: #FFE047;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin-top: 40px;
+        border-radius: 10px;
+        }
+    }
