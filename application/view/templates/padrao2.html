@@ -9,17 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="cabecalho">
+    <div class="cabecalho2">
         <div class="logo"><img id="img_logo" src="{{ url_for('static', filename='img/logo.png') }}" alt=""></div>
-        <div class="butons_left">
-
-            <a><img src="{{ url_for('static', filename='img/darkM.svg') }}" alt=""></a>
-            <a><img src="{{ url_for('static', filename='img/load.svg') }}" alt=""></a>
-            <a><img src="{{ url_for('static', filename='img/menu.svg') }}" alt=""></a>
-
-        </div>
     </div>
-
     <div class="local">
         <div class="cep">
             <img src="{{ url_for('static', filename='img/cep.svg') }}" alt="">
@@ -29,8 +21,8 @@
         <div class="editar"><img src="{{ url_for('static', filename='img/edit.svg') }}" alt=""></div>
 
     </div>
-
-    <div class="list_events">
+    {% block content %}
+        <div class="list_events">
         <div class="eventos">
 
         </div>
@@ -45,11 +37,11 @@
         </div>
 
         </div>
-    </div>
+        </div>
+    {% endblock %}
+    
     <footer>
 
     </footer>
 </body>
 </html>
-
-

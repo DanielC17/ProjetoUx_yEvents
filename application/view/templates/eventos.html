@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% extends 'padrao.html'%}
 
-    <title>Document</title>
-</head>
-<body>
+{% block cabecalho %}
     <div class="cabecalho">
         <div class="logo"><img id="img_logo" src="{{ url_for('static', filename='img/logo.png') }}" alt=""></div>
         <div class="butons_left">
@@ -19,17 +11,9 @@
 
         </div>
     </div>
+{% endblock %}
 
-    <div class="local">
-        <div class="cep">
-            <img src="{{ url_for('static', filename='img/cep.svg') }}" alt="">
-            <div id="cidade"><a>Valença 27600-000</a></div>
-        </div>
-
-        <div class="editar"><img src="{{ url_for('static', filename='img/edit.svg') }}" alt=""></div>
-
-    </div>
-
+{% block content %}
     <div class="list_events">
         <div class="eventos">
 
@@ -46,10 +30,4 @@
 
         </div>
     </div>
-    <footer>
-
-    </footer>
-</body>
-</html>
-
-
+{% endblock %}
