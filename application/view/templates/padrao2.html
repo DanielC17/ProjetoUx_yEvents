@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <title>Document</title>
+    <title>Events</title>
 </head>
 <body>
     <div class="cabecalho2">
@@ -22,26 +22,18 @@
 
     </div>
     {% block content %}
-        <div class="list_events">
-        <div class="eventos">
-
-        </div>
-        <div class="eventos">
-
-        </div>
-        <div class="eventos">
-
-        </div>
-        <div class="eventos">
-
-        </div>
-
-        </div>
-        </div>
+       
     {% endblock %}
     
     <footer>
+        <div class="butons_menu">
 
+            <a class="icon_menu"><img src="{{ url_for('static', filename='img/home_menu.svg') }}" alt=""></a>
+            <a class="icon_menu"><img src="{{ url_for('static', filename='img/pesquisa.svg') }}" alt=""></a>
+            <a class="icon_menu"><img src="{{ url_for('static', filename='img/agenda.svg') }}" alt=""></a>
+            <a class="icon_menu"><img src="{{ url_for('static', filename='img/user.svg') }}" alt=""></a>
+
+        </div>
     </footer>
 </body>
 </html>

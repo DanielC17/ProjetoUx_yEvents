@@ -92,6 +92,17 @@ footer{
     margin-top: 28px;
     border-radius: 10px;
     }
+
+.butons_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 65vh;
+}
+.icons_menu{
+    
+}
 }
 
 
