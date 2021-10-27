@@ -67,7 +67,7 @@ body{
     margin-right: 10px;
     }
 .list_events{
-    height: 70vh;
+    height: 74vh;
 }
 .eventos{
     background-color: #C4C4C4;
@@ -82,6 +82,14 @@ body{
     border-color: #B608BF;
     }
 
+.campo_busca{
+    height: 74vh;
+}
+
+
+
+
+
 footer{
     background-color: #FFE047;
     display: flex;
@@ -89,7 +97,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    margin-top: 28px;
     border-radius: 10px;
     }
 
