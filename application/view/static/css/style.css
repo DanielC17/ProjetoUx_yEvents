@@ -171,43 +171,46 @@ body{
 }
 
 .campo_agenda{
+    display: flex;
+    flex-direction: column;
     height: 74vh;
 }
 
 .text_agenda{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
     color: #ffffff;
     
 }
 
 .conteudo_agenda{
     background-color: #C4C4C4;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 420px;
+    display: grid;
+    height: 66vh;
     border-radius: 20px;
     border-style: solid;
     border-color: #B608BF;
 }
 
+.subtitle{
+    margin: 4vh 0 1vw 4vw;
+    font-size: 6vw;
+}
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 200px ;
-    grid-gap: 2px;
-    background-color: #2196F3;
-    padding: 2px;
+    grid-template-columns: 271px 78px;
+    margin-left: 2px;
+    grid-gap: 1px;
+    background-color: #8821f369;
+    padding: 1px;
+    justify-content: space-evenly;
   }
   
   .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: 3px 0;
     font-size: 30px;
   }
 
