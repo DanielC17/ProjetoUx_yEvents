@@ -80,15 +80,72 @@ body{
     border-radius: 20px;
     border-style: solid;
     border-color: #B608BF;
+
     }
 
 .campo_busca{
-    height: 74vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+}
+
+.lupa{
+    
+    background-color: #C4C4C4;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #B608BF;
 }
 
 
 
+.campo_agenda{
+    height: 74vh;
+}
 
+.text_agenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    
+}
+
+.conteudo_agenda{
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 420px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #B608BF;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 200px ;
+    grid-gap: 2px;
+    background-color: #2196F3;
+    padding: 2px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 
 footer{
     background-color: #FFE047;
