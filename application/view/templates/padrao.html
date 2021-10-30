@@ -10,18 +10,21 @@
     <title>yEvents</title>
 </head>
 <body>
+    <a class="botaoadicionar" href="">+</a>
     {% block cabecalho %}
             
     {% endblock %}
-    <div class="local">
-        <div class="cep">
-            <img src="{{ url_for('static', filename='img/cep.svg') }}" alt="">
-            <div id="cidade"><a>Valença 27600-000</a></div>
+    <div class="local_area"></div>
+        <div class="local">
+            <div class="cep">
+                <img src="{{ url_for('static', filename='img/cep.svg') }}" alt="">
+                <div id="cidade"><a>Valença 27600-000</a></div>
+            </div>
+
+            <div class="editar"><img src="{{ url_for('static', filename='img/edit.svg') }}" alt=""></div>
+
         </div>
-
-        <div class="editar"><img src="{{ url_for('static', filename='img/edit.svg') }}" alt=""></div>
-
-    </div>
+    </div>  
     {% block content %}
 
     {% endblock %}
@@ -29,10 +32,10 @@
     <footer>
         <div class="butons_menu">
 
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/home_menu.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/home_menu.svg') }}" alt=""></a>
             <a class="icon_menu" href="{{url_for('busca')}}"><img src="{{ url_for('static', filename='img/pesquisa.svg') }}" alt=""></a>
-            <a class="icon_menu" ><img src="{{ url_for('static', filename='img/agenda.svg') }}" alt=""></a>
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/user.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('calendario')}}"><img src="{{ url_for('static', filename='img/agenda.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('user')}}"><img src="{{ url_for('static', filename='img/user.svg') }}" alt=""></a>
             
         </div>
     </footer>

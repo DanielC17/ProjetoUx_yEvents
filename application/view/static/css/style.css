@@ -11,6 +11,25 @@ body{
     margin: 0%;
 }
 
+.botaoadicionar{
+    background-color: #B608BF;
+    width: 19vw;
+    height: 6vh;
+    position: fixed;
+    bottom: 12vh;
+    right: 3vw;
+    border-radius: 50vh;
+    border: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vw;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+
+}
+
 .cabecalho{
     background-color: #FFE047;
     display: flex;
@@ -43,6 +62,13 @@ body{
     width: 20vh;
     margin-top: 10px;
     }
+
+.local_area{
+
+
+
+}
+
 
 .local{
     background-color: #FFE047;
@@ -87,24 +113,62 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 37vh;
+    align-items: flex-end;
+    height: 15vh;
 }
 
-.lupa{
+.busca{
+    width: 80vw;
+    height: 5vh;
+    border-radius: 5vw;
+    background: #C4C4C4;
+    border: 1px solid #B608BF;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
     
-    background-color: #C4C4C4;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 30px;
-    margin-right: 25px;
-    margin-left: 25px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #B608BF;
 }
 
+.text_categoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
 
+.text{
+       
+    width: 80vw;
+    height: 5vh;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-variant-caps: small-caps;
+    font-family: -webkit-pictograph;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    justify-content: space-evenly;
+}
+
+.categoria{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo{
+    width: 40vw;
+    height: 20vh;
+    background: #C4C4C4;
+    border: 1px solid #B608BF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 .campo_agenda{
     height: 74vh;
@@ -150,6 +214,8 @@ body{
 footer{
     background-color: #FFE047;
     display: flex;
+    position: fixed;
+    bottom: 0%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +228,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 65vh;
+    width: 56vh;
 }
 
 .icons_menu{

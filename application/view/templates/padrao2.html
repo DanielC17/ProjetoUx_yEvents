@@ -9,6 +9,7 @@
     <title>Events</title>
 </head>
 <body>
+    <a class="botaoadicionar" href="">+</a>
     <div class="cabecalho2">
         <div class="logo"><img id="img_logo" src="{{ url_for('static', filename='img/logo.png') }}" alt=""></div>
     </div>
@@ -28,10 +29,11 @@
     <footer>
         <div class="butons_menu">
 
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/home_menu.svg') }}" alt=""></a>
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/pesquisa.svg') }}" alt=""></a>
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/agenda.svg') }}" alt=""></a>
-            <a class="icon_menu"><img src="{{ url_for('static', filename='img/user.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/home_menu.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('busca')}}"><img src="{{ url_for('static', filename='img/pesquisa.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('calendario')}}"><img src="{{ url_for('static', filename='img/agenda.svg') }}" alt=""></a>
+            <a class="icon_menu" href="{{url_for('user')}}"><img src="{{ url_for('static', filename='img/user.svg') }}" alt=""></a>
+            
 
         </div>
     </footer>
