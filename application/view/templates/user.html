@@ -3,7 +3,46 @@
 <div class="campo_agenda">
 
     <div class="text_agenda"><p>Configurações</p></div>
-    <div class="conteudo_agenda"></div>
+    <div class="conteudo_config">
+        <div class="info_config">
+            <div class="img_user">
+                <img src="{{ url_for('static', filename='img/user.png') }}" alt="">
+            </div>
+            <div class="info_user">
+                <div class="nome_user">Nome User</div>
+                <div class="email_user">Email: usuario@usuario</div>
+                <div class="cep_user">CEP: 00000-000</div>
+            </div>
+        </div>
+        <div class="opcoes_config">
+            <div class="config_opcoes">
+                <div class="texto">Configuração</div>
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='img/cep_b.svg') }}" alt="">
+                </div>
+            </div>
+            <div class="config_opcoes">
+                <div class="texto">Notificações</div>
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='img/cep_b.svg') }}" alt="">
+                </div>
+            </div>
+            <div class="config_opcoes">
+                <div class="texto">Meus Eventos</div>
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='img/cep_b.svg') }}" alt="">
+                </div>
+            </div>
+            <div class="config_opcoes">
+                <div class="texto">Sair</div>
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='img/cep_b.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
             
 </div>
+<style>.botaoadicionar{display:none;}</style>
 {% endblock %}
