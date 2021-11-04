@@ -85,9 +85,11 @@ body{
     flex-direction: row;
     margin-right: 10px;
     }
-.list_events{
-    height: 74vh;
+.lista_eventos{
+    /*height: 74vh;*/
+    margin-bottom: 12vh;
 }
+
 .eventos{
     background-color: #C4C4C4;
     display: flex;
@@ -101,6 +103,85 @@ body{
     border-color: #B608BF;
 
     }
+.lista_evento {
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 15vh;
+    margin-top: 2vh;
+    border-radius: 6vw;
+    border-style: solid;
+    border-color: #B608BF;
+}
+    
+.img_evento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6vw;
+}
+
+.img_evento img{
+    width: 20vw;
+}
+
+.evento_info{
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    margin: 0 4vw;
+    align-items: stretch;
+    color: #B608BF;
+    flex-direction: column;
+}
+
+.linha_evento{
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+#carregando{
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.coluna_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1vw 0;
+}
+
+.nome_evento, .data_evento{
+    font-size: 5vw;
+    margin: 0;
+}
+
+.local_evento, .hora_evento{
+    display: flex;
+    align-items: center;
+}
+
+.local_evento p, .hora_evento p{
+    margin: 0;
+}
+
+.coracao_evento{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
+}
+
+.coracao_evento img{
+    margin: 0 1vw;    
+}
+
 
 .campo_busca{
     display: flex;
