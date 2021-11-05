@@ -1,0 +1,33 @@
+{% for evento in evento_list %}
+    <div class="lista_evento">
+        <div class="img_evento">
+            <img src="{{ url_for('static', filename=evento.imagem ) }}" alt="">
+        </div>
+        <div class="evento_info">
+            <div class="linha_evento">
+                <div class="coluna_info">
+                    <h1 class="nome_evento"><u>{{evento.nome}}</u></h1>
+                    <div class="local_evento">
+                        <img src="{{ url_for('static', filename='img/cep.svg') }}" alt="">
+                        <p>{{evento.local}}</p>
+                    </div>
+                </div>
+                <div class="coluna_info">
+                    <h1 class="data_evento">{{evento.data}}</h1>
+                    <div class="hora_evento">
+                        <img src="{{ url_for('static', filename='img/relogio.svg') }}" alt="">
+                        <p>{{evento.hora}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linha_evento">
+                <div class="coracao_evento">
+                    <img src="{{ url_for('static', filename='img/coracao.svg') }}" alt="">
+                    <img src="{{ url_for('static', filename='img/coracao.svg') }}" alt="">
+                    <img src="{{ url_for('static', filename='img/coracao.svg') }}" alt="">
+                    <img src="{{ url_for('static', filename='img/coracao.svg') }}" alt="">     
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

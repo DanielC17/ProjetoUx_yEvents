@@ -14,10 +14,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="list_events">
-        <div class="eventos"></div>
-        <div class="eventos"></div>
-        <div class="eventos"></div>
-        <div class="eventos"></div>
+    <div class="lista_eventos" id="lista_eventos_ajax">
+        <p id="carregando">Carregando eventos...</p>
     </div>
+    <script>
+        xhr_eventos = new XMLHttpRequest();
+        xhr_eventos.open("GET", "/lista_eventos");
+        xhr_eventos.send(null);
+        xhr_eventos.onreadystatechange = function () {
+            if (xhr_eventos.readyState === 4 && xhr_eventos.status === 200) {
+                document.getElementById("lista_eventos_ajax").innerHTML = xhr_eventos.response;
+            }
+        }
+    </script>
 {% endblock %}
